@@ -5,6 +5,7 @@ const c_user = require('./controllers/c_user');
 // 2.实例化路由对象
 const router = express.Router();
 // 3.使用路由
-router.get('/',c_user.showSignin);
+// 渲染登陆页
+router.get('/signin',c_user.showSignin);
 // 4.导出
 module.exports = router;
